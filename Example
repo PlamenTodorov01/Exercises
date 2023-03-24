@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Example {
+    public static void main(String[] args) {
+        String color = "yellow";
+        if (color.equals("red")) {
+            System.out.println("tomato");
+        }
+        else if (color.equals("yellow")){
+            System.out.println("banana");
+            System.out.println("lemon");
+        }
+    }
+}
