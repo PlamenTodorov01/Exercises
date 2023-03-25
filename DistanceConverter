@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class DistanceConverter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        double number = Double.parseDouble(scanner.nextLine());
+        String distance1 = scanner.nextLine();
+        String distance2 = scanner.nextLine();
+
+        double mm = 1000;
+        double cm = 100;
+        double mi = 0.000621371192;
+        double in = 39.3700787;
+        double km = 0.001;
+        double ft = 3.2808399;
+        double yd = 1.0936133;
+
+        double result = 0;
+
+        if (distance1.equals("mm")) {
+            result = number / mm;
+        } else if (distance1.equals("cm")) {
+            result = number / cm;
+        } else if (distance1.equals("mi")) {
+            result = number / mi;
+        } else if (distance1.equals("in")) {
+            result = number / in;
+        } else if (distance1.equals("km")) {
+            result = number / km;
+        } else if (distance1.equals("ft")) {
+            result = number / ft;
+        } else if (distance1.equals("yd")) {
+            result = number / yd;
+        } else if (distance1.equals("m")) {
+            result = number;
+        }
+
+        if (distance2.equals("mm")) {
+            result = result*mm;
+        } else if (distance2.equals("cm")) {
+            result = result*cm;
+        } else if (distance2.equals("mi")) {
+            result = result*mi;
+        } else if (distance2.equals("in")) {
+            result = result*in;
+        } else if (distance2.equals("km")) {
+            result = result*km;
+        } else if (distance2.equals("ft")) {
+            result = result*ft;
+        } else if (distance2.equals("yd")) {
+            result = result*yd;
+        } else if (distance2.equals("m")) {
+            result = result;
+        }
+
+
+        System.out.println(result);
+    }
+}
